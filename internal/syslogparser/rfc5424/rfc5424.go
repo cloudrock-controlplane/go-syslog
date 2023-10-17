@@ -117,6 +117,7 @@ func (p *Parser) Dump() syslogparser.LogParts {
 		"msg_id":          p.header.msgId,
 		"structured_data": p.structuredData,
 		"message":         p.message,
+		"line":            string(p.buff),
 	}
 }
 
